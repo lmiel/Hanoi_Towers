@@ -1,12 +1,18 @@
 from pilaHanoi import *
 
-myPila = Pila()
+def getTablero(n):
+    tablero = []
+    tablero.append(Pila())
+    tablero.append(Pila())
+    tablero.append(Pila())
+    for n in range(n,0,-1):
+        tablero[0].apilar(n)
+    return tablero
 
-myPila.apilar(5)
-myPila.apilar(4)
-myPila.apilar(2)
-myPila.apilar(5)
-myPila.desapilar()
+def resolver(n,tablero,pila1,pila2,pila3):
+    if n = 1:
+        print("D1 from ",pila1,"to",pila3)
+    
+    
 
-
-print(myPila)
+tablero = getTablero(4)
